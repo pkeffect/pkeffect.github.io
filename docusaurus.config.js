@@ -88,9 +88,9 @@ const config = {
             position: 'left',
             label: 'Documents',
           },
-          {to: '/blog', label: 'Blog (Beta)', position: 'left'},
+//          {to: '/blog', label: 'Blog (Beta)', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/pkeffect/',
             label: 'GitHub',
             position: 'right',
           },
@@ -98,47 +98,47 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Documents',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog (Beta)',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/pkeffect/',
-              },
-            ],
-          },
-        ],
+//        links: [
+//          {
+//            title: 'Docs',
+//            items: [
+//             {
+//                label: 'Documents',
+//                to: '/docs/intro',
+//              },
+//            ],
+//          },
+//          {
+//            title: 'Community',
+//            items: [
+//              {
+//                label: 'Stack Overflow',
+//                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+//              },
+//              {
+//                label: 'Discord',
+//                href: 'https://discordapp.com/invite/docusaurus',
+//              },
+//              {
+//                label: 'X',
+//                href: 'https://x.com/docusaurus',
+//              },
+//            ],
+//          },
+//          {
+//            title: 'More',
+//            items: [
+//              {
+//                label: 'Blog (Beta)',
+//                to: '/blog',
+//              },
+//              {
+//                label: 'GitHub',
+//                href: 'https://github.com/pkeffect/',
+//              },
+//            ],
+//          },
+//        ],
         copyright: `Copyright © ${new Date().getFullYear()} Internode.info`,
       },
       prism: {
