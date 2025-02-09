@@ -1,17 +1,13 @@
 # Docker Compose
 
  * Main interface I use for LLM interaction and more is OpenWebUI
-   
-![alt text](https://github.com/pkeffect/AI/blob/main/images/llm.app.learning.curve.small.png "llm app learning curve")
-
-* The compose files listed below assume the following:
-  * Ollama is installed locally, not in docker
-  * Volumes are stored/mounted local (directory), not in docker
-* Rename example.env to .env and edit as needed. See [OpenWebUI Env Options](https://docs.openwebui.com/getting-started/advanced-topics/env-configuration) for more information
-* This is the most efficient setup for my system. Your mileage may vary
-  * Windows 11 | [Docker Desktop](https://www.docker.com/products/docker-desktop/) | [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) - [24.10 (Oracular Oriole)](https://ubuntu.com/)
-  * AMD Ryzen 9 3900XT | 128GB DDR4 RAM | ASUS TUF RTX 3080 GAMING OC 10GB
-
+ * The compose files listed below assume the following:
+ * Ollama is installed locally, not in docker
+ * Volumes are stored/mounted local (directory), not in docker
+ * Rename example.env to .env and edit as needed. See [OpenWebUI Env Options](https://docs.openwebui.com/getting-started/env-configuration) for more information
+ * This is the most efficient setup for my system. Your mileage may vary
+ * Windows 11 | [Docker Desktop](https://www.docker.com/products/docker-desktop/) | [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) - [24.10 (Oracular Oriole)](https://ubuntu.com/)
+ * AMD Ryzen 9 3900XT | 128GB DDR4 RAM | ASUS TUF RTX 3080 GAMING OC 10GB
 
 # Simplified Compose
 ```
