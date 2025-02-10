@@ -24,9 +24,14 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'pkeffect', // Usually your GitHub org/user name.
   projectName: 'pkeffect.github.io', // Usually your repo name.
-  trailingSlash: false,
+  trailingSlash: true,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
+	// Enable Mermaid for diagrams
+	markdown: {
+		mermaid: true,
+	},
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -43,26 +48,13 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+		  routeBasePath: '/', // Serve the docs at the site's root
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/pkeffect/pkeffect.github.io/tree/main',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/pkeffect/pkeffect.github.io/tree/main',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },

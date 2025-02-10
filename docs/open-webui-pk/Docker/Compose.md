@@ -5,9 +5,7 @@
  * Ollama is installed locally, not in docker
  * Volumes are stored/mounted local (directory), not in docker
  * Rename example.env to .env and edit as needed. See [OpenWebUI Env Options](https://docs.openwebui.com/getting-started/env-configuration) for more information
- * This is the most efficient setup for my system. Your mileage may vary
- * Windows 11 | [Docker Desktop](https://www.docker.com/products/docker-desktop/) | [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) - [24.10 (Oracular Oriole)](https://ubuntu.com/)
- * AMD Ryzen 9 3900XT | 128GB DDR4 RAM | ASUS TUF RTX 3080 GAMING OC 10GB
+
 
 # Simplified Compose
 ```
