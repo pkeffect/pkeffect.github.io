@@ -71,7 +71,7 @@ const config = {
         title: 'Monolith',
         logo: {
           alt: 'Monolith Logo',
-          src: 'img/logo.svg',
+          src: 'img/favicon.ico',
         },
         items: [
           {
