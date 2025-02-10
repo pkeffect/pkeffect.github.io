@@ -19,6 +19,7 @@ sidebar_position: 2
 
 | IMAGE | BRANCH |
 | ------------- | ------------- |
+| ```docker pull ghcr.io/open-webui/open-webui:latest``` | Latest |
 | ```docker pull ghcr.io/open-webui/open-webui:main``` | Main |
 | ```docker pull ghcr.io/open-webui/open-webui:cuda``` | Nvidia CUDA |
 | ```docker pull ghcr.io/open-webui/open-webui:ollama``` | Ollama bundle |
