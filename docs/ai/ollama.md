@@ -1,7 +1,7 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
-# OLLAMA Cheat SHeet
+# Ollama Cheat Sheet
 | SITE | ADDRESS |
 | ------------- | ------------- |
 | Ollama | https://ollama.com/ |

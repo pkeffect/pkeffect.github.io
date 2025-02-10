@@ -1,4 +1,7 @@
-# Docker Compose
+---
+sidebar_position: 3
+---
+# OpenWebUI Compose
 
  * Main interface I use for LLM interaction and more is OpenWebUI
  * The compose files listed below assume the following:
