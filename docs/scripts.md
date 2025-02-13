@@ -2,7 +2,8 @@
 ## Docker Project Deployment Windows
 The script below will create a directory with the basic files for your project. 
 
-Copy and save as a ```.bat``` then click to run.
+* Copy the code below and save as ```start.bat``` 
+* Click to run from current directory
 ```
 @echo off
 
