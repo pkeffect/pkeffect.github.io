@@ -1,7 +1,7 @@
 ---
 sidebar_position: 10
 ---
-# APIs
+# APIs - 
 
 ## AI APIs
 | ENTITY | ENDPOINT |
