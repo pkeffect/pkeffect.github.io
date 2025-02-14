@@ -9,3 +9,6 @@ Artificial intelligence (AI) research has made tremendous progress in recent yea
 
 ## What is to come
 Who knows but here we go... buckle up.
+
+
+G30 did an edit. G30 will submit an edit now.
