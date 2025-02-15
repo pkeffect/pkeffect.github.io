@@ -1,10 +1,14 @@
 ---
 sidebar_position: 1
 ---
+
+# 💡 Introduction
+
 :::warning
 This is a work in progress.
 :::
-# 💡 Introduction
+
+
 My name is pkeffect and this is a space for all things. Together with the help of you and my AI Assistant Monolith, we will bring together great ideas and deep knowledge. Your mileage may vary.
 
 ## What is going on here ?
