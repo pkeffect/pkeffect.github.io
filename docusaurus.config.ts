@@ -114,15 +114,15 @@ const config: Config = {
 			style: "light",
 			links: [
 				{
-					title: "Docs",
+					title: "Home",
 					items: [
 						{
-							label: "Documents",
-							to: "/docs/intro",
+							label: "Home",
+							to: "https://pkeffect.github.io",
 						},
 						{
-							label: "FAQ",
-							to: "faq",
+							label: "OpenWebUI",
+							to: "https://github.com/open-webui/open-webui",
 						},
 					],
 				},
