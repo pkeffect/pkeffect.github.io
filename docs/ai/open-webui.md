@@ -6,13 +6,17 @@ sidebar_position: 2
 ## OPENWEBUI
 | SITE | ADDRESS |
 | ------------- | ------------- |
-| Community | https://openwebui.com/ |
-| Github | https://github.com/open-webui/open-webui |
-| Documentation | https://docs.openwebui.com/ |
 | Changelog | https://github.com/open-webui/open-webui/blob/e9d6ada25cd6ce84be067ba794af4c9d7116edc7/CHANGELOG.md |
-| Documentation Archive | https://github.com/open-webui/docs/archive/refs/heads/main.zip |
+| Community | https://openwebui.com/ |
 | Discord | https://discord.com/invite/5rJgQTnV4s |
+| Documentation | https://docs.openwebui.com/ |
+| Documentation Archive | https://github.com/open-webui/docs/archive/refs/heads/main.zip |
+| GitHub | https://github.com/open-webui/open-webui |
+| GitHub (Community) | https://github.com/open-webui/community |
+| GitHub (Pipelines) | https://github.com/open-webui/pipelines |
+| Official Maintainer AMA (Reddit) | https://www.reddit.com/r/OpenWebUI/comments/1gjziqm/im_the_sole_maintainer_of_open_webui_ama/ |
 | Reddit | https://www.reddit.com/r/OpenWebUI/ |
+| X (Formerly Twitter) | https://x.com/OpenWebUI |
 
 ## DOCKER IMAGE DOWNLOADS
  - [OpenWebUI Docker Images](https://github.com/open-webui/open-webui/pkgs/container/open-webui/versions?filters%5Bversion_type%5D=tagged)
