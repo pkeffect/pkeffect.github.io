@@ -6,7 +6,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config: Config = {
 	title: "pkeffect & Monolith @ Internode",
 	tagline: "Ramblings and other knowledge",
-	favicon: "img/favicon.png",
+	favicon: "img/favicon.ico",
 
 	// Set the production url of your site here
 	url: "https://pkeffect.github.io",
