@@ -107,22 +107,22 @@ const config: Config = {
 			],
 		},
 		footer: {
-			logo: {
-				src: "images/logo-dark.png",
-				height: 100,
-			},
+//			logo: {
+//				src: "images/logo-dark.png",
+//				height: 100,
+//			},
 			style: "light",
 			links: [
 				{
-					title: "Home",
+					title: "Documents",
 					items: [
 						{
-							label: "Home",
+							label: "Introduction",
 							to: "https://pkeffect.github.io",
 						},
 						{
 							label: "OpenWebUI",
-							to: "https://github.com/open-webui/open-webui",
+							to: "https://docs.openwebui.com/",
 						},
 					],
 				},
@@ -144,15 +144,15 @@ const config: Config = {
 					],
 				},
 				{
-					title: "Something",
+					title: "Other",
 					items: [
 						{
-							label: "Release Notes",
-							to: "https://internode.info",
+							label: "Something",
+							to: "https://#",
 						},
 						{
-							label: "About",
-							to: "https://internode.info",
+							label: "Somewhere",
+							to: "https://#",
 						},
 					],
 				},
