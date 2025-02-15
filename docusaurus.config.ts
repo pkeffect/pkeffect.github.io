@@ -6,7 +6,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config: Config = {
 	title: "pkeffect & Monolith @ Internode",
 	tagline: "Ramblings and other knowledge",
-	favicon: "images/favicon.png",
+	favicon: "img/favicon.png",
 
 	// Set the production url of your site here
 	url: "https://pkeffect.github.io",
@@ -68,10 +68,10 @@ const config: Config = {
 		// image: "images/docusaurus-social-card.jpg",
 		navbar: {
 			title: "Internode",
-			logo: {
-				src: "images/logo.png",
-				srcDark: "images/logo-dark.png",
-			},
+            logo: {
+              alt: 'Monolith Logo',
+              src: 'img/favicon.ico',
+                   },
 			items: [
 				// {
 				// 	type: "docSidebar",
