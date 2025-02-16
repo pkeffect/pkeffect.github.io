@@ -1,71 +1,71 @@
 {
-	"name": "docs",
-	"version": "0.0.0",
-	"private": true,
-	"scripts": {
-		"docusaurus": "docusaurus",
-		"start": "docusaurus start",
-		"build": "docusaurus build",
-		"swizzle": "docusaurus swizzle",
-		"deploy": "docusaurus deploy",
-		"clear": "docusaurus clear",
-		"serve": "docusaurus serve",
-		"write-translations": "docusaurus write-translations",
-		"write-heading-ids": "docusaurus write-heading-ids",
-		"mdx-check": "npx docusaurus-mdx-checker",
-		"typecheck": "tsc",
-		"prettier": "prettier . --write",
-		"prettier:check": "prettier . --check",
-		"lint": "eslint",
-		"lint:fix": "eslint --fix",
-		"stylelint": "stylelint \"src/**/*.css\""
-	},
-	"dependencies": {
-		"@docusaurus/core": "^3.5.2",
-		"@docusaurus/preset-classic": "^3.5.2",
-		"@docusaurus/theme-mermaid": "^3.5.2",
-		"@mdx-js/react": "^3.0.1",
-		"clsx": "^2.1.1",
-		"docusaurus-lunr-search": "^3.5.0",
-		"docusaurus-plugin-sass": "^0.2.5",
-		"prism-react-renderer": "^2.4.0",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
-		"sass": "^1.79.3"
-	},
-	"devDependencies": {
-		"@docusaurus/eslint-plugin": "^3.5.2",
-		"@docusaurus/module-type-aliases": "^3.5.2",
-		"@docusaurus/tsconfig": "^3.5.2",
-		"@docusaurus/types": "^3.5.2",
-		"@eslint/js": "^9.11.1",
-		"@types/eslint__js": "^8.42.3",
-		"autoprefixer": "^10.4.20",
-		"eslint": "^8.57.0",
-		"postcss": "^8.5.2",
-		"prettier": "^3.3.3",
-		"prettier-plugin-tailwindcss": "^0.6.8",
-		"stylelint": "^16.9.0",
-		"stylelint-config-html": "^1.1.0",
-		"stylelint-config-standard": "^36.0.1",
-		"tailwindcss": "^3.4.17",
-		"typescript": "~5.5.4",
-		"typescript-eslint": "^8.7.0",
-		"vite": "^6.1.0"
-	},
-	"browserslist": {
-		"production": [
-			">0.5%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 3 chrome version",
-			"last 3 firefox version",
-			"last 5 safari version"
-		]
-	},
-	"engines": {
-		"node": ">=18.0"
-	}
+  "name": "pkeffect-github-io",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "mdx-check": "npx docusaurus-mdx-checker",
+    "typecheck": "tsc",
+    "prettier": "prettier . --write",
+    "prettier:check": "prettier . --check",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "stylelint": "stylelint \"src/**/*.css\""
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.5.2",
+    "@docusaurus/preset-classic": "^3.5.2",
+    "@docusaurus/theme-mermaid": "^3.5.2",
+    "@mdx-js/react": "^3.0.1",
+    "clsx": "^2.1.1",
+    "docusaurus-lunr-search": "^3.5.0",
+    "docusaurus-plugin-sass": "^0.2.5",
+    "prism-react-renderer": "^2.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.79.3"
+  },
+  "devDependencies": {
+    "@docusaurus/eslint-plugin": "^3.5.2",
+    "@docusaurus/module-type-aliases": "^3.5.2",
+    "@docusaurus/tsconfig": "^3.5.2",
+    "@docusaurus/types": "^3.5.2",
+    "@eslint/js": "^9.11.1",
+    "@types/eslint__js": "^8.42.3",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "postcss": "^8.5.2",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "stylelint": "^16.9.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.5.4",
+    "typescript-eslint": "^8.7.0",
+    "vite": "^6.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0"
+  }
 }
