@@ -20,6 +20,11 @@ services:
     tty: true    
     ports:
       - "3999:8080"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3" 
     volumes: #locally mounted directory
       - ./data:/app/backend/data
     deploy: # gpu support
@@ -79,7 +84,12 @@ services:
     image: ghcr.io/open-webui/open-webui:dev-cuda
     container_name: open-webui-dev-cuda
     stdin_open: true
-    tty: true    
+    tty: true
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"     
     ports:
       - "3000:8080"
     volumes:
