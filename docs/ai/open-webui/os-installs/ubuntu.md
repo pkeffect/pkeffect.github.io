@@ -120,7 +120,7 @@ pip install --upgrade pip
 ### Install Open WebUI
 ```
 pip install open-webui
-```
+```
 
 ### Start Open WebUI
 ```
@@ -182,12 +182,12 @@ conda create --name owui python=3.11.11
 ### Activate the new environment
 ```
 conda activate owui
-```
+```
 
 ### Verify Python version in the new environment
 ```
 python --version
-```
+```
 
 You should see output showing Python 3.11.11.
 
