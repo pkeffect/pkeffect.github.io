@@ -97,7 +97,7 @@ exec "$SHELL"
 ### Version check
 ```
 pyenv --version
-```
+```
 
 ### Look for Python versions
 ```
@@ -195,14 +195,14 @@ conda activate owui
 ### Verify Python version in the new environment
 ```
 python --version
-```
+```
 
 You should see output showing Python 3.11.11.
 
 ### Install Open WebUI
 ```
 pip install open-webui
-```
+```
 
 ### Start Open WebUI
 ```

@@ -67,7 +67,7 @@ pip install -U open-webui
 
 ## Install pyenv:
 ### Install git and curl
-```
+```
 sudo apt install git
 ```
 
