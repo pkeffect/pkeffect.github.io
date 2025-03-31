@@ -1,4 +1,4 @@
-# Mint 22.1 Cinnamon (native venv, pyenv, miniconda)
+# Mint 22.1 Cinnamon
 ### Update all packages
 ```
 sudo apt update

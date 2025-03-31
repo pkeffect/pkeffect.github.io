@@ -1,4 +1,4 @@
-# OpenSUSE 9.5 Tumbleweed (native venv, pyenv, miniconda)
+# OpenSUSE 9.5 Tumbleweed
 ### Update all packages
 ```
 sudo zypper update
