@@ -2,7 +2,7 @@
 Clean Desktop Install
 
 ### Download MiniConda
-```https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe```
+https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 
 ### Run installer
 ```Miniconda3-latest-Windows-x86_64.exe```
