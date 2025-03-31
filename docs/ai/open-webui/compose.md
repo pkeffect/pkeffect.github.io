@@ -131,7 +131,7 @@ services:
   tika:
     image: apache/tika:latest-full
     container_name: open-webui-tika
-    expose:
+    ports:
       - "9998:9998"
     depends_on:
       - open-webui-dev-cuda       
@@ -171,6 +171,8 @@ services:
         uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
       "
     restart: unless-stopped
+    networks:
+      - "hyperspace" #change or not
 
   openapi-git:
     image: python:3.11-slim
@@ -209,6 +211,8 @@ services:
         uvicorn main:app --host 0.0.0.0 --port ${PORT:-8002}
       "
     restart: unless-stopped
+    networks:
+      - "hyperspace" #change or not
 
   openapi-time:
     image: python:3.11-slim
@@ -228,6 +232,8 @@ services:
         uvicorn main:app --host 0.0.0.0 --port ${PORT:-8003}
       "
     restart: unless-stopped
+    networks:
+      - "hyperspace" #change or not
       
   pipelines:
     image: ghcr.io/open-webui/pipelines:main 
