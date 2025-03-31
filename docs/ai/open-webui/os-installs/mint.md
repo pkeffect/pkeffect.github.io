@@ -1,5 +1,5 @@
 # Mint 22.1 Cinnamon
-### Update all packages
+<b>Update all packages</b>
 ```
 sudo apt update
 ```
@@ -8,217 +8,217 @@ sudo apt update
 sudo apt upgrade
 ```
 
-### Check Python version (3.11 minimum 3.12 maximum)
+<b>Check Python version (3.11 minimum 3.12 maximum)</b>
 ```
 python3 --version
 ```
 
-### For compiling python
+<b>For compiling python</b>
 ```
 sudo apt install build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 ```
 
-### Install venv (version must match python version)
+<b>Install venv (version must match python version)</b>
 ```
 sudo apt install python3.12-venv
 ```
 
-### Create a new virtual environment
+<b>Create a new virtual environment</b>
 ```
 python3 -m venv owui
 ```
 
-### Activate environment
+<b>Activate environment</b>
 ```
 source owui/bin/activate
 ```
 
-### Upgrade pip if needed
+<b>Upgrade pip if needed</b>
 ```
 pip install --upgrade pip
 ```
 
-### Install Open WebUI
+<b>Install Open WebUI</b>
 ```
 pip install open-webui
 ```
 
-### Start Open WebUI
+<b>Start Open WebUI</b>
 ```
 open-webui serve
 ```
 
-### Open Web Brower
+<b>Open Web Brower</b>
 http://localhost:8080
 * cntrl+C to shutdown
 
-### Close virtual environment
+<b>Close virtual environment</b>
 ```
 deactivate
 ```
 
-### Update Open WebUI
-- Make sure you are in your venv environment and use the following command
+<b>Update Open WebUI</b>
+- Make sure you are in your venv environment and use the following command<
 ```
 pip install -U open-webui
 ```
 
 ## Install pyenv:
-### Install git and curl
+<b>Install git and curl</b>
 ```
 sudo apt install git
 ```
 
-### Git install script
+<b>Git install script</b>
 ```
 curl -fsSL https://pyenv.run | bash
 ```
 
-### Setup your shell for pyenv
+<b>Setup your shell for pyenv</b>
 ```
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
 ```
 
-### Then for your profile
+<b>Then for your profile</b>
 ```
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.profile
 echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.profile
 echo 'eval "$(pyenv init - bash)"' >> ~/.profile
 ```
 
-### Restart shell
+<b>Restart shell</b>
 ```
 exec "$SHELL"
 ```
 
-### Version check
+<b>Version check</b>
 ```
 pyenv --version
 ```
 
-### Look for Python versions
+<b>Look for Python versions</b>
 ```
 pyenv install --list
 ```
 
-### Install Python version
+<b>Install Python version</b>
 ```
 pyenv install 3.11.11
 ```
 
-### Create a virtual environment
+<b>Create a virtual environment</b>
 ```
 pyenv virtualenv 3.11.11 owui
 ```
 
-### Activate a virtual environment
+<b>Activate a virtual environment</b>
 ```
 pyenv activate owui
 ```
 
-### Upgrade pip if needed
+<b>Upgrade pip if needed</b>
 ```
 pip install --upgrade pip
 ```
 
-### Install Open WebUI
+<b>Install Open WebUI</b>
 ```
 pip install open-webui
 ```
 
-### Start Open WebUI
+<b>Start Open WebUI</b>
 ```
 open-webui serve
 ```
 
-### Open Web Brower
+<b>Open Web Brower</b>
 http://localhost:8080
 * cntrl+C to shutdown
 
-### Close virtual environment
+<b>Close virtual environment</b>
 ```
 deactivate
 ```
 
-### Update Open WebUI
+<b>Update Open WebUI</b>
 - Make sure you are in your venv environment and use the following command
 ```
 pip install -U open-webui
 ```
 
 ## Install Miniconda:
-### Download Miniconda installer
+<b>Download Miniconda installer</b>
 ```wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
 ```
 
-### Make the installer executable
+<b>Make the installer executable</b>
 ```
 chmod +x ~/miniconda.sh
 ```
 
-### Run the installer
+<b>Run the installer</b>
 ```
 ~/miniconda.sh
 ```
 
-### During installation:
+<b>During installation:</b>
 - Accept the license agreement when prompted
 - Choose installation location (default is fine)
 - Let the installer initialize Miniconda by answering "yes" when asked
 
-### Activate the installation
+<b>Activate the installation
 ```
 source ~/.bashrc
 ```
 
-Or close and reopen your terminal.
+Or close and reopen your terminal</b>
 
-### Verify Miniconda installation
+<b>Verify Miniconda installation</b>
 ```
 conda --version
 ```
 
-### Create a new environment with Python 3.11.11
+<b>Create a new environment with Python 3.11.11</b>
 ```
 conda create --name owui python=3.11.11
 ```
 
-### Activate the new environment
+<b>Activate the new environment</b>
 ```
 conda activate owui
 ```
 
-### Verify Python version in the new environment
+<b>Verify Python version in the new environment</b>
 ```
 python --version
 ```
 
-You should see output showing Python 3.11.11.
+You should see output showing Python 3.11.11</b>
 
-### Install Open WebUI
+<b>Install Open WebUI
 ```
 pip install open-webui
 ```
 
-### Start Open WebUI
+<b>Start Open WebUI</b>
 ```
 open-webui serve
 ```
 
-### Open Web Brower
+<b>Open Web Brower</b>
 http://localhost:8080
 * cntrl+C to shutdown
 
-### To deactivate the environment when you're done using it:
+<b>To deactivate the environment when you're done using it:</b>
 ```
 conda deactivate
 ```
 
-### Update Open WebUI
+<b>Update Open WebUI</b>
 - Make sure you are in your venv environment and use the following command
 ```
 pip install -U open-webui
