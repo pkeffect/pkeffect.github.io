@@ -172,8 +172,8 @@ services:
       "
     restart: unless-stopped
     networks:
-      - "hyperspace" #change or not
-
+      - "hyperspace"
+      
   openapi-git:
     image: python:3.11-slim
     container_name: openapi-git
@@ -186,13 +186,18 @@ services:
       - PORT=8001
     command: >
       bash -c "
-        apt-get update && apt-get install -y git curl && apt-get clean &&
+        apt-get update && 
+        apt-get install -y git-core git-lfs curl && 
+        apt-get clean &&
         cd /app && 
         pip install --no-cache-dir -r requirements.txt &&
+        pip install GitPython &&
         uvicorn main:app --host 0.0.0.0 --port ${PORT:-8001}
       "
     restart: unless-stopped
-
+    networks:
+      - "hyperspace"
+      
   openapi-memory:
     image: python:3.11-slim
     container_name: openapi-memory
@@ -212,8 +217,8 @@ services:
       "
     restart: unless-stopped
     networks:
-      - "hyperspace" #change or not
-
+      - "hyperspace"
+      
   openapi-time:
     image: python:3.11-slim
     container_name: openapi-time
@@ -233,7 +238,8 @@ services:
       "
     restart: unless-stopped
     networks:
-      - "hyperspace" #change or not
+      - "hyperspace"
+      
       
   pipelines:
     image: ghcr.io/open-webui/pipelines:main 
