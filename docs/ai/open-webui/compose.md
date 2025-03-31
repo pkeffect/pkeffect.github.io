@@ -6,7 +6,7 @@ sidebar_position: 3
  * Main interface I use for LLM interaction and more is OpenWebUI
  * The compose files listed below assume the following:
  * Ollama is installed locally, not in docker
- * Volumes are stored/mounted local (directory), not in docker
+ * Volumes are stored/mounted local (directory), not in docker volumes
  * Rename example.env to .env and edit as needed. See [OpenWebUI Env Options](https://docs.openwebui.com/getting-started/env-configuration) for more information
 
 
@@ -14,12 +14,12 @@ sidebar_position: 3
 ```
 services:
   open-webui-dev-cuda:
-    image: ghcr.io/open-webui/open-webui:dev-cuda
+    image: ghcr.io/open-webui/open-webui:main
     container_name: open-webui-dev-cuda
     stdin_open: true
     tty: true    
     ports:
-      - "3999:8080"
+      - "3000:8080"
     logging:
       driver: "json-file"
       options:
@@ -27,15 +27,6 @@ services:
         max-file: "3" 
     volumes: #locally mounted directory
       - ./data:/app/backend/data
-    deploy: # gpu support
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities:
-                - gpu      
-    env_file: .env      
     environment:
       - 'SAFE_MODE=${SAFE_MODE}'    
       - 'SCARF_NO_ANALYTICS=${SCARF_NO_ANALYTICS}'
@@ -60,6 +51,20 @@ networks:
 ## Complex Compose
 ```
 services:
+  nginx-proxy:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: nginx-reverse-proxy
+    restart: always
+    ports:
+      - '80:80' # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81' # Admin Web Port
+    volumes: # The volumes below are mounted to host
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+    networks:
+      - "hyperspace"
+
 #  ollama:
 #    volumes:
 #      - H:/ai/.ollama:/root/.ollama
@@ -146,6 +151,83 @@ services:
     restart: always  
     networks:
       - "hyperspace"
+
+  # OpenAPI Tool Servers using local directories
+  openapi-filesystem:
+    image: python:3.11-slim
+    container_name: openapi-filesystem
+    volumes:
+      - ./openapi-filesystem-data:/app/data
+      - ./openapi-servers/servers/filesystem:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+    command: >
+      bash -c "
+        apt-get update && apt-get install -y git curl && apt-get clean &&
+        cd /app && 
+        pip install --no-cache-dir -r requirements.txt &&
+        uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
+      "
+    restart: unless-stopped
+
+  openapi-git:
+    image: python:3.11-slim
+    container_name: openapi-git
+    volumes:
+      - ./openapi-git-data:/app/data
+      - ./openapi-servers/servers/git:/app
+    ports:
+      - "8001:8001"
+    environment:
+      - PORT=8001
+    command: >
+      bash -c "
+        apt-get update && apt-get install -y git curl && apt-get clean &&
+        cd /app && 
+        pip install --no-cache-dir -r requirements.txt &&
+        uvicorn main:app --host 0.0.0.0 --port ${PORT:-8001}
+      "
+    restart: unless-stopped
+
+  openapi-memory:
+    image: python:3.11-slim
+    container_name: openapi-memory
+    volumes:
+      - ./openapi-memory-data:/app/data
+      - ./openapi-servers/servers/memory:/app
+    ports:
+      - "8002:8002"
+    environment:
+      - PORT=8002
+    command: >
+      bash -c "
+        apt-get update && apt-get install -y git curl && apt-get clean &&
+        cd /app && 
+        pip install --no-cache-dir -r requirements.txt &&
+        uvicorn main:app --host 0.0.0.0 --port ${PORT:-8002}
+      "
+    restart: unless-stopped
+
+  openapi-time:
+    image: python:3.11-slim
+    container_name: openapi-time
+    volumes:
+      - ./openapi-time-data:/app/data
+      - ./openapi-servers/servers/time:/app
+    ports:
+      - "8003:8003"
+    environment:
+      - PORT=8003
+    command: >
+      bash -c "
+        apt-get update && apt-get install -y git curl && apt-get clean &&
+        cd /app && 
+        pip install --no-cache-dir -r requirements.txt &&
+        uvicorn main:app --host 0.0.0.0 --port ${PORT:-8003}
+      "
+    restart: unless-stopped
       
   pipelines:
     image: ghcr.io/open-webui/pipelines:main 
@@ -166,6 +248,17 @@ services:
     restart: always
     networks:
       - "hyperspace"
+  jupyter:
+    image: jupyter/datascience-notebook
+    container_name: jupyter
+    ports:
+      - "8889:8888"
+    volumes:
+      - notebook:/home/jovyan/work
+    environment:
+      - JUPYTER_TOKEN=somethinghere
+      - JUPYTER_ENABLE_TOKEN=yes
+    restart: always
 
   openedai-speech:
     image: ghcr.io/matatonic/openedai-speech:latest
