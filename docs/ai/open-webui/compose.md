@@ -10,7 +10,7 @@ sidebar_position: 3
  * Rename example.env to .env and edit as needed. See [OpenWebUI Env Options](https://docs.openwebui.com/getting-started/env-configuration) for more information
 
 
-# Simplified Compose
+## Simplified Compose
 ```
 services:
   open-webui-dev-cuda:
