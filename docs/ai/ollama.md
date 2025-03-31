@@ -1,8 +1,11 @@
 ---
 sidebar_position: 4
 ---
+
 # Ollama Cheat Sheet
-## LINKS
+
+## OllAMA LINKS
+
 | SITE | ADDRESS |
 | ------------- | ------------- |
 | Ollama | https://ollama.com/ |
@@ -15,6 +18,7 @@ sidebar_position: 4
 | Reddit | https://www.reddit.com/r/ollama/ |
 
 ## OLLAMA ENVIRONMENT VARIABLES
+
 | Variable | Default Value | Description + Effect + Scenario |
 | ------------- | ------------- | ------------- |
 | ```OLLAMA_HOST``` | "http://127.0.0.1:11434" | Configures the host and scheme for the Ollama server. Effect: Determines the URL used for connecting to the Ollama server. Scenario: Useful when deploying Ollama in a distributed environment or when you need to expose the service on a specific network interface. |
