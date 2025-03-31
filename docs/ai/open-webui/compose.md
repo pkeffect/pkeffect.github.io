@@ -15,7 +15,7 @@ sidebar_position: 3
 services:
   open-webui-dev-cuda:
     image: ghcr.io/open-webui/open-webui:main
-    container_name: open-webui-dev-cuda
+    container_name: open-webui
     stdin_open: true
     tty: true    
     ports:
@@ -34,7 +34,6 @@ services:
       - 'ANONYMIZED_TELEMETRY=${ANONYMIZED_TELEMETRY}'
       - 'OLLAMA_BASE_URL=${OLLAMA_BASE_URL}'
       - 'WEBUI_SECRET_KEY=${WEBUI_SECRET_KEY}'
-      - 'USE_CUDA_DOCKER=${USE_CUDA_DOCKER}'
       - 'ENV=${ENV}'
       - 'USER_AGENT=${USER_AGENT}'
       - 'WEBUI_URL=${WEBUI_URL}'
