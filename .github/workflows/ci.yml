@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Run Prettier
-        npm run prettier:check # run the "prettier:check" package script
+        npm run prettier:check
 
       - name: Run ESLint
         run: npm run lint
