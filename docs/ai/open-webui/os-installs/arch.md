@@ -67,7 +67,7 @@ python --version
 
 You should see output showing Python 3.11.11.
 
-### Install Open WebUI
+### Install Open WebUI using Miniconda
 ```
 pip install open-webui
 ```
@@ -141,7 +141,7 @@ pyenv activate owui
 pip install --upgrade pip
 ```
 
-### Install Open WebUI
+### Install Open WebUI using pyenv
 ```
 pip install open-webui
 ```
