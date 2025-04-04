@@ -13,7 +13,7 @@ sidebar_position: 3
 ## Simplified Compose
 ```
 services:
-  open-webui-dev-cuda:
+  open-webui-main:
     image: ghcr.io/open-webui/open-webui:main
     container_name: open-webui
     stdin_open: true
