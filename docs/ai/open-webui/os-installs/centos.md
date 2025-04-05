@@ -1,5 +1,7 @@
 # CentOS Stream 10
 
+This guide will help you get a virtual environment for python up and going on CentOS.
+
 ### Update all packages
 ```
 sudo dnf update

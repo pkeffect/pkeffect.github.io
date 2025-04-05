@@ -166,7 +166,7 @@ deactivate
 pip install -U open-webui
 ```
 
-# Extras
+## Extras
 - Install open-vm-tools on an Arch Linux guest operating system in VMWare, you can use the pacman package manager. Here's how to do it:
 
 ``First, make sure your system is up to date:``
