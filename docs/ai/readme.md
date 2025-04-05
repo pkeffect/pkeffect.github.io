@@ -14,5 +14,5 @@ The late 20th century saw a resurgence of AI research, driven by breakthroughs i
 Today, AI is a transformative force across industries, from healthcare to finance, entertainment, and transportation. Modern advancements include sophisticated applications in computer vision, autonomous vehicles, and personalized recommendation systems. The field has also seen the emergence of generative AI, exemplified by models like GPT-4, capable of creating human-like text and images. Despite these strides, ethical concerns—such as bias in algorithms, data privacy, and job displacement—are increasingly prominent in discussions about AI's future. As AI continues to evolve, its integration into daily life grows more seamless, raising important questions about how humanity will navigate this rapidly advancing technological landscape. 
 
 ## Future
-We are going to be diving in with Ollama and OpenWebUI to interact with out Large Language Models (LLMs).
+We are going to be diving in with Ollama and OpenWebUI to interact with our Large Language Models (LLMs).
 
