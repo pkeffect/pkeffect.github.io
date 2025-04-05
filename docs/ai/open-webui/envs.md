@@ -1,4 +1,4 @@
-# Environmental Vasriables
+# Environmental Variables
 
 - Open WebUI envs
 https://docs.openwebui.com/getting-started/env-configuration
